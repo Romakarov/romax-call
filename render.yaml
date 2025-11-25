@@ -3,7 +3,7 @@ services:
     name: romax-call-api
     env: node
     plan: free
-    buildCommand: npm install --include=dev && npm exec tsc -- --project tsconfig.server.json
+        buildCommand: "npm install --include=dev && npm exec tsc -- --project tsconfig.server.json"
     envVars:
       - key: NODE_ENV
         value: production
